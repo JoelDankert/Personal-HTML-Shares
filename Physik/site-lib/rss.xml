@@ -1,4 +1,13 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AllNotes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>AllNotes</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 18 Mar 2026 20:49:30 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 18 Mar 2026 20:49:29 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[2.7 Elektronen (geladene Teilchen) in E- und B-Feldern]]></title><description><![CDATA[
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AllNotes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>AllNotes</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 18 Mar 2026 20:52:59 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 18 Mar 2026 20:52:58 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[2.1 Wiederholung der Grundlagen]]></title><description><![CDATA[
+Es gibt zwei magnetische Pole:
+Nord- und Südpol
+Nord- und Südpol treten immer zusammen auf.
+Modellvorstellung:
+unmagnetisiertesEisenstückMagnet
+Stabmagnet Hufeisenmagnet
+Näherungsweisehomogen
+Feldlinien verlaufen kreuzungsfrei von Nord nach Süd Feld um Stromdurchflossenen Leiter: Linke Hand Regel: Daumen in Richtung
+gekrümmte Finger der linken Hand zeigen in Feldlinienrichtung Spule: verstärkt die magnetische Wirkung ]]></description><link>2.-magnetisches-feld/2.1-wiederholung-der-grundlagen.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.1 Wiederholung der Grundlagen.md</guid><pubDate>Wed, 18 Mar 2026 20:50:52 GMT</pubDate></item><item><title><![CDATA[2.7 Elektronen (geladene Teilchen) in E- und B-Feldern]]></title><description><![CDATA[
 gekreuztes E- und B-Feld
 Elektronen fliegen gerade durch, wenn gilt: ⇒ alle Teilchen, die geradlinig durchgeflogen sind, haben die gleiche !!
 Kennt man die Ladung, so ergibt sich ein Spektrum der Teilchenmassen.
@@ -91,16 +100,7 @@ Es entseteht ein Kräftegleichgewicht zwischen und .
 (→ laufen "gerade" durch)
 Das Auftreten der Hall-Spannung heißt Hall-Effekt.
 Man muss eine Hall-Sonde in einem bekannten B-Feld eichen (weil ja nicht bekannt ist)
-Die Hall-Sonde muss senkrecht zum B-Feld gehalten werden, Hält man sie parallel, dann misst sich nichts.]]></description><link>2.-magnetisches-feld/2.4-der-hall-effekt.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.4 Der Hall-Effekt.md</guid><pubDate>Wed, 18 Mar 2026 18:38:55 GMT</pubDate></item><item><title><![CDATA[2.1 Wiederholung der Grundlagen]]></title><description><![CDATA[
-Es gibt zwei magnetische Pole:
-Nord- und Südpol
-Nord- und Südpol treten immer zusammen auf.
-Modellvorstellung:
-unmagnetisiertesEisenstückMagnet
-Stabmagnet Hufeisenmagnet
-Näherungsweisehomogen
-Feldlinien verlaufen kreuzungsfrei von Nord nach Süd Feld um Stromdurchflossenen Leiter: Linke Hand Regel: Daumen in Richtung
-gekrümmte Finger der linken Hand zeigen in Feldlinienrichtung Spule: verstärkt die magnetische Wirkung ]]></description><link>2.-magnetisches-feld/2.1-wiederholung-der-grundlagen.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.1 Wiederholung der Grundlagen.md</guid><pubDate>Wed, 18 Mar 2026 18:20:12 GMT</pubDate></item><item><title><![CDATA[1.8 Bewegung geladener Teilchen im E-Feld]]></title><description><![CDATA[Braunsche Röhre Glühelektrischer Effekt: treten aus Glühkathode aus
+Die Hall-Sonde muss senkrecht zum B-Feld gehalten werden, Hält man sie parallel, dann misst sich nichts.]]></description><link>2.-magnetisches-feld/2.4-der-hall-effekt.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.4 Der Hall-Effekt.md</guid><pubDate>Wed, 18 Mar 2026 18:38:55 GMT</pubDate></item><item><title><![CDATA[1.8 Bewegung geladener Teilchen im E-Feld]]></title><description><![CDATA[Braunsche Röhre Glühelektrischer Effekt: treten aus Glühkathode aus
 die werden zur Anode hin beschleunigt
 der Wehnelt-Zylinder fokussiert die (Abstoßung zur Mitte)
 Ablenkung im Ablenkkondensator
