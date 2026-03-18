@@ -1,5 +1,6 @@
 <script>
 function fixSVG() {
+
   document.querySelectorAll('symbol image[preserveAspectRatio="none"]').forEach(el => {
     el.removeAttribute("preserveAspectRatio");
   });
@@ -9,6 +10,7 @@ function fixSVG() {
       svg.setAttribute("width", "100%");
     }
   });
+
 }
 
 fixSVG();
@@ -20,28 +22,32 @@ observer.observe(document.documentElement, {
   subtree: true
 });
 
+/* dein funktionierender light mode */
 document.documentElement.classList.remove("theme-dark");
 document.documentElement.classList.add("theme-light");
 
-document.addEventListener("DOMContentLoaded", () => {
+/* 🔻 WARTEN BIS BODY DA IST */
+window.addEventListener("DOMContentLoaded", () => {
+
   document.body.classList.remove("theme-dark");
   document.body.classList.add("theme-light");
-});
 
-/* plain copyright text at bottom */
-const style = document.createElement("style");
-style.textContent = `
-  body::after {
-    content: "© 2026 Joel Dankert";
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 12px;
-    color: #000;
-    z-index: 9999;
-    pointer-events: none;
-  }
-`;
-document.head.appendChild(style);
+  /* 🔻 simpler footer */
+  const footer = document.createElement("div");
+  footer.textContent = "© 2026 Joel Dankert";
+
+  footer.style.position = "fixed";
+  footer.style.bottom = "0";
+  footer.style.left = "0";
+  footer.style.width = "100%";
+  footer.style.background = "#000";
+  footer.style.color = "#fff";
+  footer.style.textAlign = "center";
+  footer.style.fontSize = "12px";
+  footer.style.padding = "6px 0";
+  footer.style.zIndex = "9999";
+
+  document.body.appendChild(footer);
+
+});
 </script>
