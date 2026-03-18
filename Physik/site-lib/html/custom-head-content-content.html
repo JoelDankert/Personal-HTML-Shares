@@ -1,18 +1,14 @@
 <script>
 function fixSVG() {
-
-  /* remove broken preserveAspectRatio */
   document.querySelectorAll('symbol image[preserveAspectRatio="none"]').forEach(el => {
     el.removeAttribute("preserveAspectRatio");
   });
 
-  /* force excalidraw SVGs to use responsive width */
   document.querySelectorAll('.excalidraw-embedded-img svg').forEach(svg => {
     if (svg.getAttribute("width") !== "100%") {
       svg.setAttribute("width", "100%");
     }
   });
-
 }
 
 fixSVG();
@@ -24,39 +20,26 @@ observer.observe(document.documentElement, {
   subtree: true
 });
 
-/* force light mode */
 document.documentElement.classList.remove("theme-dark");
 document.documentElement.classList.add("theme-light");
 document.body.classList.remove("theme-dark");
 document.body.classList.add("theme-light");
 
+/* simple copyright text at bottom */
+if (!document.getElementById("copyright-mark")) {
+  const mark = document.createElement("div");
+  mark.id = "copyright-mark";
+  mark.textContent = "© 2026 Joel Dankert";
 
-/* footer erzeugen */
-function addFooter() {
-  if (document.querySelector(".custom-footer")) return;
+  mark.style.position = "fixed";
+  mark.style.bottom = "10px";
+  mark.style.left = "50%";
+  mark.style.transform = "translateX(-50%)";
+  mark.style.color = "#000";
+  mark.style.fontSize = "12px";
+  mark.style.background = "transparent";
+  mark.style.zIndex = "9999";
 
-  const footer = document.createElement("div");
-  footer.className = "custom-footer";
-  footer.innerText = "© 2026 Joel Dankert";
-
-  Object.assign(footer.style, {
-    width: "100%",
-    background: "#000",
-    color: "#fff",
-    textAlign: "center",
-    padding: "12px 10px",
-    fontSize: "14px",
-    position: "relative",
-    marginTop: "40px"
-  });
-
-  document.body.appendChild(footer);
+  document.body.appendChild(mark);
 }
-
-/* beim Laden + bei Änderungen */
-addFooter();
-new MutationObserver(addFooter).observe(document.body, {
-  childList: true,
-  subtree: true
-});
 </script>
