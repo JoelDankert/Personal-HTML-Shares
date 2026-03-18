@@ -32,9 +32,9 @@ function addFooterStyle() {
       left: 50%;
       transform: translateX(-50%);
       font-size: 12px;
-      color: #fff;
-      background: #000;
-      padding: 4px 8px;
+      color: #000;
+      background: transparent;
+      padding: 0;
       z-index: 9999;
       pointer-events: none;
       font-family: Arial, sans-serif;
@@ -55,6 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
   forceLightMode();
 });
 
+window.addEventListener("load", forceLightMode);
+
 /* only watch for new content, not class changes */
 new MutationObserver(() => {
   fixSVG();
@@ -62,4 +64,4 @@ new MutationObserver(() => {
   childList: true,
   subtree: true
 });
-</script>
+</script>/script>
