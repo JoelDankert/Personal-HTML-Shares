@@ -1,0 +1,62 @@
+<script>
+function fixSVG() {
+
+  /* remove broken preserveAspectRatio */
+  document.querySelectorAll('symbol image[preserveAspectRatio="none"]').forEach(el => {
+    el.removeAttribute("preserveAspectRatio");
+  });
+
+  /* force excalidraw SVGs to use responsive width */
+  document.querySelectorAll('.excalidraw-embedded-img svg').forEach(svg => {
+    if (svg.getAttribute("width") !== "100%") {
+      svg.setAttribute("width", "100%");
+    }
+  });
+
+}
+
+fixSVG();
+
+const observer = new MutationObserver(() => fixSVG());
+
+observer.observe(document.documentElement, {
+  childList: true,
+  subtree: true
+});
+
+/* force light mode */
+document.documentElement.classList.remove("theme-dark");
+document.documentElement.classList.add("theme-light");
+document.body.classList.remove("theme-dark");
+document.body.classList.add("theme-light");
+
+
+/* footer erzeugen */
+function addFooter() {
+  if (document.querySelector(".custom-footer")) return;
+
+  const footer = document.createElement("div");
+  footer.className = "custom-footer";
+  footer.innerText = "© 2026 Joel Dankert";
+
+  Object.assign(footer.style, {
+    width: "100%",
+    background: "#000",
+    color: "#fff",
+    textAlign: "center",
+    padding: "12px 10px",
+    fontSize: "14px",
+    position: "relative",
+    marginTop: "40px"
+  });
+
+  document.body.appendChild(footer);
+}
+
+/* beim Laden + bei Änderungen */
+addFooter();
+new MutationObserver(addFooter).observe(document.body, {
+  childList: true,
+  subtree: true
+});
+</script>
