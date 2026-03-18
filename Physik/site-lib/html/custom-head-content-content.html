@@ -22,17 +22,32 @@ observer.observe(document.documentElement, {
   subtree: true
 });
 
-/* dein funktionierender light mode */
-document.documentElement.classList.remove("theme-dark");
-document.documentElement.classList.add("theme-light");
+/* 🔹 FORCE LIGHT MODE (permanent) */
+function forceLight() {
+  document.documentElement.classList.remove("theme-dark");
+  document.documentElement.classList.add("theme-light");
 
-/* 🔻 WARTEN BIS BODY DA IST */
+  if (document.body) {
+    document.body.classList.remove("theme-dark");
+    document.body.classList.add("theme-light");
+  }
+}
+
+/* initial */
+forceLight();
+
+/* 🔥 keep forcing it when page changes */
+new MutationObserver(forceLight).observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ["class"],
+  subtree: false
+});
+
+/* 🔻 WAIT FOR BODY */
 window.addEventListener("DOMContentLoaded", () => {
 
-  document.body.classList.remove("theme-dark");
-  document.body.classList.add("theme-light");
+  forceLight();
 
-  /* 🔻 simpler footer */
   const footer = document.createElement("div");
   footer.textContent = "© 2026 Joel Dankert";
 
