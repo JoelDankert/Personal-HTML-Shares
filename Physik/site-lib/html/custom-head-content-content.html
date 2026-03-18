@@ -1,29 +1,15 @@
 <script>
 function fixSVG() {
-
   document.querySelectorAll('symbol image[preserveAspectRatio="none"]').forEach(el => {
     el.removeAttribute("preserveAspectRatio");
   });
 
   document.querySelectorAll('.excalidraw-embedded-img svg').forEach(svg => {
-    if (svg.getAttribute("width") !== "100%") {
-      svg.setAttribute("width", "100%");
-    }
+    svg.setAttribute("width", "100%");
   });
-
 }
 
-fixSVG();
-
-const observer = new MutationObserver(() => fixSVG());
-
-observer.observe(document.documentElement, {
-  childList: true,
-  subtree: true
-});
-
-/* 🔹 FORCE LIGHT MODE (permanent) */
-function forceLight() {
+function forceLightMode() {
   document.documentElement.classList.remove("theme-dark");
   document.documentElement.classList.add("theme-light");
 
@@ -33,36 +19,47 @@ function forceLight() {
   }
 }
 
-/* initial */
-forceLight();
+function addFooterStyle() {
+  if (document.getElementById("jd-footer-style")) return;
 
-/* 🔥 keep forcing it when page changes */
-new MutationObserver(forceLight).observe(document.documentElement, {
-  attributes: true,
-  attributeFilter: ["class"],
-  subtree: false
+  const style = document.createElement("style");
+  style.id = "jd-footer-style";
+  style.textContent = `
+    html::after {
+      content: "© 2026 Joel Dankert";
+      position: fixed;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      color: #fff;
+      background: #000;
+      padding: 4px 8px;
+      z-index: 9999;
+      pointer-events: none;
+      font-family: Arial, sans-serif;
+      white-space: nowrap;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+/* run once */
+fixSVG();
+forceLightMode();
+addFooterStyle();
+
+/* run again after page is ready */
+document.addEventListener("DOMContentLoaded", () => {
+  fixSVG();
+  forceLightMode();
 });
 
-/* 🔻 WAIT FOR BODY */
-window.addEventListener("DOMContentLoaded", () => {
-
-  forceLight();
-
-  const footer = document.createElement("div");
-  footer.textContent = "© 2026 Joel Dankert";
-
-  footer.style.position = "fixed";
-  footer.style.bottom = "0";
-  footer.style.left = "0";
-  footer.style.width = "100%";
-  footer.style.background = "#000";
-  footer.style.color = "#fff";
-  footer.style.textAlign = "center";
-  footer.style.fontSize = "12px";
-  footer.style.padding = "6px 0";
-  footer.style.zIndex = "9999";
-
-  document.body.appendChild(footer);
-
+/* only watch for new content, not class changes */
+new MutationObserver(() => {
+  fixSVG();
+}).observe(document.documentElement, {
+  childList: true,
+  subtree: true
 });
 </script>
