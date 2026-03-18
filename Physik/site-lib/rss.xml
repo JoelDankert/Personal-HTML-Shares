@@ -1,4 +1,21 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AllNotes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>AllNotes</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 18 Mar 2026 20:35:20 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 18 Mar 2026 20:35:19 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[2.2 Lorentzkraft]]></title><description><![CDATA[<a data-tooltip-position="top" aria-label="IMG_20241211_081656.jpg" data-href="IMG_20241211_081656.jpg" href="meta/attachments/img_20241211_081656.html" class="internal-link" target="_self" rel="noopener nofollow">original Arbeitsblatt</a><br><a data-tooltip-position="top" aria-label="annotated_Pasted image 20260318193250" data-href="annotated_Pasted image 20260318193250" href="meta/attachments/annotated_pasted-image-20260318193250.html" class="internal-link" target="_self" rel="noopener nofollow">ungerendert</a><br>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[AllNotes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>AllNotes</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 18 Mar 2026 20:39:45 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 18 Mar 2026 20:39:44 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[2.7 Elektronen (geladene Teilchen) in E- und B-Feldern]]></title><description><![CDATA[
+gekreuztes E- und B-Feld
+Elektronen fliegen gerade durch, wenn gilt: ⇒ alle Teilchen, die geradlinig durchgeflogen sind, haben die gleiche !!
+Kennt man die Ladung, so ergibt sich ein Spektrum der Teilchenmassen.
+wenn man nur ein Element im Stahl hat, hat man - bei verschiedenen Auftreffpunkten - Isotope getrennt.
+]]></description><link>2.-magnetisches-feld/2.7-elektronen-(geladene-teilchen)-in-e-und-b-feldern.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.7 Elektronen (geladene Teilchen) in E- und B-Feldern.md</guid><pubDate>Wed, 18 Mar 2026 20:39:39 GMT</pubDate></item><item><title><![CDATA[2.6 Elektronen im B-Feld]]></title><description><![CDATA[+-.
+Elektronenkanone schießt Elektronenstrahl nach oben
+Lorentzkraft: bewegte Elektronen sind ein Strom
+das Ganze ist im B-Feld Mit 3-Finger-Regel der linken Hand wirkt "nach rechts"
+dadurch ändert sind (und zwar nur die Richtung, nicht der Betrag!)
+die Lorentzkraft zeigt man wieder "nach richts", aber das Elektron hat ja schon eine neue Richtung → es ergibt sich eine Kreisbahn.
+⇒ Die Lorentzkraft ist die Zentripetalkraft dieser Kreisbewegung!!]]></description><link>2.-magnetisches-feld/2.6-elektronen-im-b-feld.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.6 Elektronen im B-Feld.md</guid><pubDate>Wed, 18 Mar 2026 20:38:16 GMT</pubDate></item><item><title><![CDATA[2.3 Magnetische Flussdichte B]]></title><description><![CDATA[→ wir messen die Kraft auf einen "Probestrom"............
+Wovon hängt ab?
+Vom -Feld
+Vom Strom durch die Spule Von der Windungszahl in der Spule Von der Länge Windungszahl und Länge b → wirksame Leiterlänge ⇒ → ⇒ ⇒ Das setzen wir ein:
+und für ist:weil bei auch ist, gilt:
+(gilt für )
+]]></description><link>2.-magnetisches-feld/2.3-magnetische-flussdichte-b.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.3 Magnetische Flussdichte B.md</guid><pubDate>Wed, 18 Mar 2026 20:36:03 GMT</pubDate></item><item><title><![CDATA[2.2 Lorentzkraft]]></title><description><![CDATA[<a data-tooltip-position="top" aria-label="IMG_20241211_081656.jpg" data-href="IMG_20241211_081656.jpg" href="meta/attachments/img_20241211_081656.html" class="internal-link" target="_self" rel="noopener nofollow">original Arbeitsblatt</a><br><a data-tooltip-position="top" aria-label="annotated_Pasted image 20260318193250" data-href="annotated_Pasted image 20260318193250" href="meta/attachments/annotated_pasted-image-20260318193250.html" class="internal-link" target="_self" rel="noopener nofollow">ungerendert</a><br>
 <img alt="100%" src="meta/attachments/pasted-image-20260318213440.png" target="_self">Die Lorentzkraft wirkt in Richtung des geschwächten B-Feldes.
 Hier:
 Daumen – Ursache – -Strom
@@ -65,18 +82,7 @@ Als Spannungsquelle dient ein Netzgerät mit einer Gleichspannung von bis ca. Gl
 Achtung: Nur bis etwa bis gehen, da sonst die Stromstärke zu groß wird.
 Als Strommesser dient das Vernier-Messgerät mit Strommessmodul (für die Kurve) und ein Voltcraft-Multimeter (zum direkten Ablesen). Diese müssen – wie immer – in Reihe angeschlossen werden.
 Einstellungsbereich beim Vernier-Gerät: – Messungen pro Sekunde (wenn die Kurve chaotisch wird: reduzieren), Dauer: Sekunden.
-Leite anhand der Überlegungen von S. 67 (Dorn-Bader) eine Gleichung zur Bestimmung von her, die folgende (für uns ermittelbare) Größen enthält: im Buch , , Ermittle den Widerstand der Spulen.Ist der Schalter geschlossen, fließt ein Strom, bis eine Endstromstärke als Dauerstrom erreicht ist. Die Spulen zuerst: verzögern das Erreichen dieser Stromstärke. Diese Verzöger​ungskurve ist mehrmals zu messen und ist sinnvoll (und begründet) damit zu ermitteln, ebenso (Achtung: Nullstrom!).Führe mit dem gleichen Versuchsaufbau noch einmal dieselbe Messung durch, jedoch mit Spulen mit Windungen, und ermittle deren .]]></description><link>3.-induktion/3.7-induktivitätsbestimmung-einer-spule-aus-der-einschaltestromkurve.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/3. Induktion/3.7 Induktivitätsbestimmung einer Spule aus der Einschaltestromkurve.md</guid><pubDate>Wed, 18 Mar 2026 18:56:52 GMT</pubDate></item><item><title><![CDATA[2.6 Elektronen im B-Feld]]></title><description><![CDATA[+-.
-Elektronenkanone schießt Elektronenstrahl nach oben
-Lorentzkraft: bewegte Elektronen sind ein Strom
-das Ganze ist im B-Feld Mit 3-Finger-Regel der linken Hand wirkt "nach rechts"
-dadurch ändert sind (und zwar nur die Richtung, nicht der Betrag!)
-die Lorentzkraft zeigt man wieder "nach richts", aber das Elektron hat ja schon eine neue Richtung → es ergibt sich eine Kreisbahn.
-⇒ Die Lorentzkraft ist die Zentripetalkraft dieser Kreisbewegung!!]]></description><link>2.-magnetisches-feld/2.6-elektronen-im-b-feld.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.6 Elektronen im B-Feld.md</guid><pubDate>Wed, 18 Mar 2026 18:43:01 GMT</pubDate></item><item><title><![CDATA[2.7 Elektronen (geladene Teilchen) in E- und B-Feldern]]></title><description><![CDATA[
-gekreuztes E- und B-Feld
-Elektronen fliegen gerade durch, wenn gilt: ⇒ alle Teilchen, die geradlinig durchgeflogen sind, haben die gleiche !!
-Kennt man die Ladung, so ergibt sich ein Spektrum der Teilchenmassen.
-wenn man nur ein Element im Stahl hat, hat man - bei verschiedenen Auftreffpunkten - Isotope getrennt.
-<a data-tooltip-position="top" aria-label="2025-01-29 07.53.11.excalidraw" data-href="2025-01-29 07.53.11.excalidraw" href="meta/attachments/2025-01-29-07.53.11.excalidraw.html" class="internal-link" target="_self" rel="noopener nofollow">Zeichnung leicht variiert zu oben, verbraucht Platz</a>]]></description><link>2.-magnetisches-feld/2.7-elektronen-(geladene-teilchen)-in-e-und-b-feldern.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.7 Elektronen (geladene Teilchen) in E- und B-Feldern.md</guid><pubDate>Wed, 18 Mar 2026 18:42:32 GMT</pubDate></item><item><title><![CDATA[2.4 Der Hall-Effekt]]></title><description><![CDATA[ durchlaufen das B-Feld
+Leite anhand der Überlegungen von S. 67 (Dorn-Bader) eine Gleichung zur Bestimmung von her, die folgende (für uns ermittelbare) Größen enthält: im Buch , , Ermittle den Widerstand der Spulen.Ist der Schalter geschlossen, fließt ein Strom, bis eine Endstromstärke als Dauerstrom erreicht ist. Die Spulen zuerst: verzögern das Erreichen dieser Stromstärke. Diese Verzöger​ungskurve ist mehrmals zu messen und ist sinnvoll (und begründet) damit zu ermitteln, ebenso (Achtung: Nullstrom!).Führe mit dem gleichen Versuchsaufbau noch einmal dieselbe Messung durch, jedoch mit Spulen mit Windungen, und ermittle deren .]]></description><link>3.-induktion/3.7-induktivitätsbestimmung-einer-spule-aus-der-einschaltestromkurve.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/3. Induktion/3.7 Induktivitätsbestimmung einer Spule aus der Einschaltestromkurve.md</guid><pubDate>Wed, 18 Mar 2026 18:56:52 GMT</pubDate></item><item><title><![CDATA[2.4 Der Hall-Effekt]]></title><description><![CDATA[ durchlaufen das B-Feld
 → (nach oben) sammeln sich oben an
 → E-Feld
 → werden nach unten gezogen
@@ -85,13 +91,7 @@ Es entseteht ein Kräftegleichgewicht zwischen und .
 (→ laufen "gerade" durch)
 Das Auftreten der Hall-Spannung heißt Hall-Effekt.
 Man muss eine Hall-Sonde in einem bekannten B-Feld eichen (weil ja nicht bekannt ist)
-Die Hall-Sonde muss senkrecht zum B-Feld gehalten werden, Hält man sie parallel, dann misst sich nichts.]]></description><link>2.-magnetisches-feld/2.4-der-hall-effekt.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.4 Der Hall-Effekt.md</guid><pubDate>Wed, 18 Mar 2026 18:38:55 GMT</pubDate></item><item><title><![CDATA[2.3 Magnetische Flussdichte B]]></title><description><![CDATA[→ wir messen die Kraft auf einen "Probestrom"............
-Wovon hängt ab?
-Vom -Feld
-Vom Strom durch die Spule Von der Windungszahl in der Spule Von der Länge Windungszahl und Länge b → wirksame Leiterlänge ⇒ → ⇒ ⇒ Das setzen wir ein:
-und für ist:weil bei auch ist, gilt:
-(gilt für )
-]]></description><link>2.-magnetisches-feld/2.3-magnetische-flussdichte-b.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.3 Magnetische Flussdichte B.md</guid><pubDate>Wed, 18 Mar 2026 18:38:45 GMT</pubDate></item><item><title><![CDATA[2.1 Wiederholung der Grundlagen]]></title><description><![CDATA[
+Die Hall-Sonde muss senkrecht zum B-Feld gehalten werden, Hält man sie parallel, dann misst sich nichts.]]></description><link>2.-magnetisches-feld/2.4-der-hall-effekt.html</link><guid isPermaLink="false">Commitments/Schule Oberstufe/Fächer/Physik (LK)/2. Magnetisches Feld/2.4 Der Hall-Effekt.md</guid><pubDate>Wed, 18 Mar 2026 18:38:55 GMT</pubDate></item><item><title><![CDATA[2.1 Wiederholung der Grundlagen]]></title><description><![CDATA[
 Es gibt zwei magnetische Pole:
 Nord- und Südpol
 Nord- und Südpol treten immer zusammen auf.
