@@ -62,20 +62,64 @@ function installEarlyLinkFix() {
 
       site.loadURL = async function(url, pushState = true) {
         if (!this.document) {
-          const start = Date.now();
-
-          while (!this.document && Date.now() - start < 5000) {
-            await new Promise(resolve => window.setTimeout(resolve, 50));
-          }
-
-          if (!this.document) {
-            window.location.href = url;
-            return;
-          }
+          return;
         }
 
         return originalLoadURL(url, pushState);
       };
+
+      if (window.LinkHandler && !window.LinkHandler.__jdInitializeLinksPatched) {
+        window.LinkHandler.__jdInitializeLinksPatched = true;
+
+        window.LinkHandler.initializeLinks = function(onElement) {
+          onElement?.querySelectorAll(".internal-link, a.tag, a.tree-item-self, a.footnote-link").forEach(link => {
+            if (link.__jdLinkHandlerInstalled) return;
+            link.__jdLinkHandlerInstalled = true;
+
+            const target = link.getAttribute("href");
+            if (!target) return;
+
+            link.addEventListener("click", event => {
+              event.preventDefault();
+              event.stopPropagation();
+
+              if (window.ObsidianSite?.document) {
+                window.ObsidianSite.loadURL(target);
+              } else {
+                window.location.href = target;
+                return;
+              }
+
+              if (window.ObsidianSite?.deviceSize === "phone") {
+                const leftSidebar = link.closest("#left-sidebar");
+                const rightSidebar = link.closest("#right-sidebar");
+
+                if (leftSidebar && window.ObsidianSite.leftSidebar?.collapsed === false) {
+                  window.ObsidianSite.leftSidebar.collapsed = true;
+                } else if (rightSidebar && window.ObsidianSite.rightSidebar?.collapsed === false) {
+                  window.ObsidianSite.rightSidebar.collapsed = true;
+                }
+              }
+            });
+
+            if (
+              target &&
+              !target.startsWith("http") &&
+              typeof window.ObsidianSite?.documentExists === "function" &&
+              !window.ObsidianSite.documentExists(target)
+            ) {
+              link.classList.add("is-unresolved");
+            } else if (
+              link.classList.contains("internal-link") &&
+              !window.ObsidianSite?.metadata?.ignoreMetadata &&
+              window.ObsidianSite?.metadata?.featureOptions?.linkPreview?.enabled &&
+              window.FilePreviewPopover?.initializeLink
+            ) {
+              window.FilePreviewPopover.initializeLink(link, target);
+            }
+          });
+        };
+      }
     } else if (attempts >= maxAttempts) {
       window.clearInterval(timer);
     }
